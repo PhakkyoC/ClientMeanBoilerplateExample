@@ -1,0 +1,12 @@
+<div style="text-align: center">
+  <img src="../../../assets/tapOff.png" alt="" style="height: 300px;width: 300px;" (click)="imgclick()" *ngIf="!on">
+  <img src="../../../assets/tapOn.png" alt="" style="height: 300px;width: 300px;" (click)="imgclick()" *ngIf="on">
+  <div style="margin-top: 30px;">
+    <div class="progress" style="height: 40px;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated"
+           role="progressbar" [style.width]="this.timer + '%'">
+      </div>
+    </div>
+  </div>
+</div>
+

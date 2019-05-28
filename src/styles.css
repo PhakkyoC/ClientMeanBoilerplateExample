@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+span{
+  font-size: 15px!important;
+}
+input{
+  font-size: 15px!important;
+}
+
+.dropdown-content {
+  display: none;
+  z-index: 1;
+}
+
+.show {display:block;}
+
+.btn-purple{
+  color: #fff;
+  background-color: purple;
+  border-color: purple;
+  font-size: 15px!important;
+}
+
+.tabRow{
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid;
+  border-color: #d8dadc;
+}

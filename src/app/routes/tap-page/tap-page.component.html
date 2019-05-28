@@ -1,0 +1,8 @@
+<div *ngFor="let score of scores" class="tabRow">
+    <span class="col-6">
+      {{score.tap}} PTS
+    </span>
+    <span class="col-6">
+      {{score.user}}/{{displayedDate(score.date)}}
+    </span>
+</div>

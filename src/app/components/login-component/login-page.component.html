@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="card-header" onclick="toggleDropdown('login')">
+      <h3>Login</h3>
+  </div>
+  <div class="card-body dropdown-content show" id="login">
+    <form [formGroup]="form" (submit)="login()">
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Email</span>
+        </div>
+        <input type="email" class="form-control" placeholder="myemail@google.com" name="email" formControlName="email">
+      </div>
+
+      <div class="input-group" style="margin-top: 15px;">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Password</span>
+        </div>
+        <input type="password" class="form-control" placeholder="password" name="password" formControlName="password">
+      </div>
+
+      <div style="text-align: center;margin-top: 20px;">
+        <button type="submit" class="btn btn-lg btn-success" [disabled]="!form.valid">Login</button>
+      </div>
+
+    </form>
+  </div>
+</div>

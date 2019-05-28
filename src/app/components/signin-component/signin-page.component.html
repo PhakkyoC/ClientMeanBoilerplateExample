@@ -1,0 +1,60 @@
+<div class="card">
+  <div class="card-header" onclick="toggleDropdown('signup')">
+    <h3>Register</h3>
+  </div>
+  <div class="card-body dropdown-content" id="signup">
+    <form [formGroup]="form" (submit)="signin()">
+
+      <div class="card">
+        <div class="card-header">
+          <h4>About you</h4>
+        </div>
+        <div class="card-body">
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >First name</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Jonh" name="first_name" formControlName="first_name">
+          </div>
+
+          <div class="input-group" style="margin-top: 15px;">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >Last name</span>
+            </div>
+            <input type="text" class="form-control" placeholder="doe" name="last_name" formControlName="last_name">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 10px;">
+        <div class="card-header">
+            <h4>Login informations</h4>
+        </div>
+        <div class="card-body">
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >Email</span>
+            </div>
+            <input type="email" class="form-control" placeholder="myemail@google.com" name="email" formControlName="email">
+          </div>
+
+          <div class="input-group" style="margin-top: 15px;">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Password</span>
+            </div>
+            <input type="password" class="form-control" placeholder="password" formControlName="password">
+          </div>
+
+        </div>
+      </div>
+
+      <div style="text-align: center;margin-top: 20px;">
+        <button type="submit" class="btn btn-lg btn-success" [disabled]="!form.valid">Register</button>
+      </div>
+
+    </form>
+  </div>
+</div>
